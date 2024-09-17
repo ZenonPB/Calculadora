@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_calc));
             gifLoading = new PictureBox();
-            label1 = new Label();
+            txtLoading = new Label();
             pgbLoading = new ProgressBar();
+            tmrLoading = new System.Windows.Forms.Timer(components);
+            tmrTxtLoad = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)gifLoading).BeginInit();
             SuspendLayout();
             // 
@@ -47,24 +50,36 @@
             gifLoading.TabStop = false;
             gifLoading.Click += pictureBox1_Click;
             // 
-            // label1
+            // txtLoading
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Comic Sans MS", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(225, 110);
-            label1.Name = "label1";
-            label1.Size = new Size(344, 65);
-            label1.TabIndex = 1;
-            label1.Text = "Carregando...";
+            txtLoading.AutoSize = true;
+            txtLoading.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtLoading.ForeColor = Color.White;
+            txtLoading.Location = new Point(127, 145);
+            txtLoading.Name = "txtLoading";
+            txtLoading.Size = new Size(221, 41);
+            txtLoading.TabIndex = 1;
+            txtLoading.Text = "Carregando...";
+            txtLoading.TextAlign = ContentAlignment.MiddleCenter;
+            txtLoading.Visible = false;
+            txtLoading.Click += label1_Click;
             // 
             // pgbLoading
             // 
             pgbLoading.Location = new Point(21, 208);
             pgbLoading.Name = "pgbLoading";
             pgbLoading.Size = new Size(753, 45);
-            pgbLoading.Style = ProgressBarStyle.Marquee;
             pgbLoading.TabIndex = 2;
+            // 
+            // tmrLoading
+            // 
+            tmrLoading.Interval = 1000;
+            tmrLoading.Tick += tmrSplash_Tick;
+            // 
+            // tmrTxtLoad
+            // 
+            tmrTxtLoad.Interval = 1000;
+            tmrTxtLoad.Tick += tmrTxtLoad_Tick;
             // 
             // frm_calc
             // 
@@ -73,7 +88,7 @@
             BackColor = Color.Tomato;
             ClientSize = new Size(800, 450);
             Controls.Add(pgbLoading);
-            Controls.Add(label1);
+            Controls.Add(txtLoading);
             Controls.Add(gifLoading);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -90,7 +105,9 @@
         #endregion
 
         private PictureBox gifLoading;
-        private Label label1;
+        private Label txtLoading;
         private ProgressBar pgbLoading;
+        private System.Windows.Forms.Timer tmrLoading;
+        private System.Windows.Forms.Timer tmrTxtLoad;
     }
 }
