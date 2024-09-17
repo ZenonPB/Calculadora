@@ -19,7 +19,7 @@ namespace calculadora
 
         private void frm_calc_Load(object sender, EventArgs e)
         {
-
+                
         }
     }
 }

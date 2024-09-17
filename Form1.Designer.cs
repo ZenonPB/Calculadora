@@ -75,9 +75,11 @@
             Controls.Add(pgbLoading);
             Controls.Add(label1);
             Controls.Add(gifLoading);
+            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "frm_calc";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora Mortal";
             Load += frm_calc_Load;
             ((System.ComponentModel.ISupportInitialize)gifLoading).EndInit();
