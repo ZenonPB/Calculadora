@@ -63,6 +63,7 @@
             btnClear.TabIndex = 0;
             btnClear.Text = "C";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // btnPercentage
             // 
@@ -347,6 +348,7 @@
             Margin = new Padding(4);
             Name = "calculadora_app";
             Text = "calculadora_app";
+            Load += calculadora_app_Load;
             ResumeLayout(false);
             PerformLayout();
         }

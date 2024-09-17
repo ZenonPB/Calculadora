@@ -16,5 +16,20 @@ namespace calculadora
         {
             InitializeComponent();
         }
+
+        private void resetCalc()
+        {
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calculadora_app_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
