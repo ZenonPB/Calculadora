@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             btnClear = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
-            button14 = new Button();
+            btnPercentage = new Button();
+            btnDivide = new Button();
+            btnMultiply = new Button();
+            btnMinus = new Button();
+            btnPlus = new Button();
+            btn7 = new Button();
+            btn8 = new Button();
+            btn9 = new Button();
+            btn4 = new Button();
+            btn5 = new Button();
+            btn6 = new Button();
+            btn3 = new Button();
+            btn2 = new Button();
+            btn1 = new Button();
             button15 = new Button();
-            button16 = new Button();
-            button17 = new Button();
-            button18 = new Button();
+            btnDot = new Button();
+            btnErase = new Button();
+            btnEquals = new Button();
             txtOperador = new Label();
             txtInScreen = new Label();
             txtAccount = new Label();
@@ -64,173 +64,173 @@
             btnClear.Text = "C";
             btnClear.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnPercentage
             // 
-            button1.BackColor = Color.Gray;
-            button1.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(108, 215);
-            button1.Name = "button1";
-            button1.Size = new Size(90, 85);
-            button1.TabIndex = 1;
-            button1.Text = "%";
-            button1.UseVisualStyleBackColor = false;
+            btnPercentage.BackColor = Color.Gray;
+            btnPercentage.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPercentage.ForeColor = Color.White;
+            btnPercentage.Location = new Point(108, 215);
+            btnPercentage.Name = "btnPercentage";
+            btnPercentage.Size = new Size(90, 85);
+            btnPercentage.TabIndex = 1;
+            btnPercentage.Text = "%";
+            btnPercentage.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnDivide
             // 
-            button2.BackColor = Color.Gray;
-            button2.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(204, 215);
-            button2.Name = "button2";
-            button2.Size = new Size(90, 85);
-            button2.TabIndex = 2;
-            button2.Text = "÷";
-            button2.UseVisualStyleBackColor = false;
+            btnDivide.BackColor = Color.Gray;
+            btnDivide.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDivide.ForeColor = Color.White;
+            btnDivide.Location = new Point(204, 215);
+            btnDivide.Name = "btnDivide";
+            btnDivide.Size = new Size(90, 85);
+            btnDivide.TabIndex = 2;
+            btnDivide.Text = "÷";
+            btnDivide.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnMultiply
             // 
-            button3.BackColor = Color.Gray;
-            button3.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(300, 215);
-            button3.Name = "button3";
-            button3.Size = new Size(90, 85);
-            button3.TabIndex = 3;
-            button3.Text = "X";
-            button3.UseVisualStyleBackColor = false;
+            btnMultiply.BackColor = Color.Gray;
+            btnMultiply.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMultiply.ForeColor = Color.White;
+            btnMultiply.Location = new Point(300, 215);
+            btnMultiply.Name = "btnMultiply";
+            btnMultiply.Size = new Size(90, 85);
+            btnMultiply.TabIndex = 3;
+            btnMultiply.Text = "X";
+            btnMultiply.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnMinus
             // 
-            button4.BackColor = Color.Gray;
-            button4.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(300, 306);
-            button4.Name = "button4";
-            button4.Size = new Size(90, 85);
-            button4.TabIndex = 4;
-            button4.Text = "-";
-            button4.UseVisualStyleBackColor = false;
+            btnMinus.BackColor = Color.Gray;
+            btnMinus.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMinus.ForeColor = Color.White;
+            btnMinus.Location = new Point(300, 306);
+            btnMinus.Name = "btnMinus";
+            btnMinus.Size = new Size(90, 85);
+            btnMinus.TabIndex = 4;
+            btnMinus.Text = "-";
+            btnMinus.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnPlus
             // 
-            button5.BackColor = Color.Gray;
-            button5.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(300, 397);
-            button5.Name = "button5";
-            button5.Size = new Size(90, 85);
-            button5.TabIndex = 5;
-            button5.Text = "+";
-            button5.UseVisualStyleBackColor = false;
+            btnPlus.BackColor = Color.Gray;
+            btnPlus.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPlus.ForeColor = Color.White;
+            btnPlus.Location = new Point(300, 397);
+            btnPlus.Name = "btnPlus";
+            btnPlus.Size = new Size(90, 85);
+            btnPlus.TabIndex = 5;
+            btnPlus.Text = "+";
+            btnPlus.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btn7
             // 
-            button6.BackColor = Color.FromArgb(64, 64, 64);
-            button6.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(12, 306);
-            button6.Name = "button6";
-            button6.Size = new Size(90, 85);
-            button6.TabIndex = 6;
-            button6.Text = "7";
-            button6.UseVisualStyleBackColor = false;
+            btn7.BackColor = Color.FromArgb(64, 64, 64);
+            btn7.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn7.ForeColor = Color.White;
+            btn7.Location = new Point(12, 306);
+            btn7.Name = "btn7";
+            btn7.Size = new Size(90, 85);
+            btn7.TabIndex = 6;
+            btn7.Text = "7";
+            btn7.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btn8
             // 
-            button7.BackColor = Color.FromArgb(64, 64, 64);
-            button7.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(108, 306);
-            button7.Name = "button7";
-            button7.Size = new Size(90, 85);
-            button7.TabIndex = 7;
-            button7.Text = "8";
-            button7.UseVisualStyleBackColor = false;
+            btn8.BackColor = Color.FromArgb(64, 64, 64);
+            btn8.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn8.ForeColor = Color.White;
+            btn8.Location = new Point(108, 306);
+            btn8.Name = "btn8";
+            btn8.Size = new Size(90, 85);
+            btn8.TabIndex = 7;
+            btn8.Text = "8";
+            btn8.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btn9
             // 
-            button8.BackColor = Color.FromArgb(64, 64, 64);
-            button8.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button8.ForeColor = Color.White;
-            button8.Location = new Point(204, 306);
-            button8.Name = "button8";
-            button8.Size = new Size(90, 85);
-            button8.TabIndex = 8;
-            button8.Text = "9";
-            button8.UseVisualStyleBackColor = false;
+            btn9.BackColor = Color.FromArgb(64, 64, 64);
+            btn9.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn9.ForeColor = Color.White;
+            btn9.Location = new Point(204, 306);
+            btn9.Name = "btn9";
+            btn9.Size = new Size(90, 85);
+            btn9.TabIndex = 8;
+            btn9.Text = "9";
+            btn9.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btn4
             // 
-            button9.BackColor = Color.FromArgb(64, 64, 64);
-            button9.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button9.ForeColor = Color.White;
-            button9.Location = new Point(12, 397);
-            button9.Name = "button9";
-            button9.Size = new Size(90, 85);
-            button9.TabIndex = 9;
-            button9.Text = "4";
-            button9.UseVisualStyleBackColor = false;
+            btn4.BackColor = Color.FromArgb(64, 64, 64);
+            btn4.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn4.ForeColor = Color.White;
+            btn4.Location = new Point(12, 397);
+            btn4.Name = "btn4";
+            btn4.Size = new Size(90, 85);
+            btn4.TabIndex = 9;
+            btn4.Text = "4";
+            btn4.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // btn5
             // 
-            button10.BackColor = Color.FromArgb(64, 64, 64);
-            button10.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button10.ForeColor = Color.White;
-            button10.Location = new Point(108, 397);
-            button10.Name = "button10";
-            button10.Size = new Size(90, 85);
-            button10.TabIndex = 10;
-            button10.Text = "5";
-            button10.UseVisualStyleBackColor = false;
+            btn5.BackColor = Color.FromArgb(64, 64, 64);
+            btn5.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn5.ForeColor = Color.White;
+            btn5.Location = new Point(108, 397);
+            btn5.Name = "btn5";
+            btn5.Size = new Size(90, 85);
+            btn5.TabIndex = 10;
+            btn5.Text = "5";
+            btn5.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // btn6
             // 
-            button11.BackColor = Color.FromArgb(64, 64, 64);
-            button11.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button11.ForeColor = Color.White;
-            button11.Location = new Point(204, 397);
-            button11.Name = "button11";
-            button11.Size = new Size(90, 85);
-            button11.TabIndex = 11;
-            button11.Text = "6";
-            button11.UseVisualStyleBackColor = false;
+            btn6.BackColor = Color.FromArgb(64, 64, 64);
+            btn6.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn6.ForeColor = Color.White;
+            btn6.Location = new Point(204, 397);
+            btn6.Name = "btn6";
+            btn6.Size = new Size(90, 85);
+            btn6.TabIndex = 11;
+            btn6.Text = "6";
+            btn6.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btn3
             // 
-            button12.BackColor = Color.FromArgb(64, 64, 64);
-            button12.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button12.ForeColor = Color.White;
-            button12.Location = new Point(204, 488);
-            button12.Name = "button12";
-            button12.Size = new Size(90, 85);
-            button12.TabIndex = 12;
-            button12.Text = "3";
-            button12.UseVisualStyleBackColor = false;
+            btn3.BackColor = Color.FromArgb(64, 64, 64);
+            btn3.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn3.ForeColor = Color.White;
+            btn3.Location = new Point(204, 488);
+            btn3.Name = "btn3";
+            btn3.Size = new Size(90, 85);
+            btn3.TabIndex = 12;
+            btn3.Text = "3";
+            btn3.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // btn2
             // 
-            button13.BackColor = Color.FromArgb(64, 64, 64);
-            button13.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button13.ForeColor = Color.White;
-            button13.Location = new Point(108, 488);
-            button13.Name = "button13";
-            button13.Size = new Size(90, 85);
-            button13.TabIndex = 13;
-            button13.Text = "2";
-            button13.UseVisualStyleBackColor = false;
+            btn2.BackColor = Color.FromArgb(64, 64, 64);
+            btn2.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn2.ForeColor = Color.White;
+            btn2.Location = new Point(108, 488);
+            btn2.Name = "btn2";
+            btn2.Size = new Size(90, 85);
+            btn2.TabIndex = 13;
+            btn2.Text = "2";
+            btn2.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // btn1
             // 
-            button14.BackColor = Color.FromArgb(64, 64, 64);
-            button14.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button14.ForeColor = Color.White;
-            button14.Location = new Point(12, 488);
-            button14.Name = "button14";
-            button14.Size = new Size(90, 85);
-            button14.TabIndex = 14;
-            button14.Text = "1";
-            button14.UseVisualStyleBackColor = false;
+            btn1.BackColor = Color.FromArgb(64, 64, 64);
+            btn1.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn1.ForeColor = Color.White;
+            btn1.Location = new Point(12, 488);
+            btn1.Name = "btn1";
+            btn1.Size = new Size(90, 85);
+            btn1.TabIndex = 14;
+            btn1.Text = "1";
+            btn1.UseVisualStyleBackColor = false;
             // 
             // button15
             // 
@@ -244,41 +244,41 @@
             button15.Text = "0";
             button15.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // btnDot
             // 
-            button16.BackColor = Color.FromArgb(64, 64, 64);
-            button16.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button16.ForeColor = Color.White;
-            button16.Location = new Point(108, 579);
-            button16.Name = "button16";
-            button16.Size = new Size(90, 85);
-            button16.TabIndex = 16;
-            button16.Text = ".";
-            button16.UseVisualStyleBackColor = false;
+            btnDot.BackColor = Color.FromArgb(64, 64, 64);
+            btnDot.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDot.ForeColor = Color.White;
+            btnDot.Location = new Point(108, 579);
+            btnDot.Name = "btnDot";
+            btnDot.Size = new Size(90, 85);
+            btnDot.TabIndex = 16;
+            btnDot.Text = ".";
+            btnDot.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // btnErase
             // 
-            button17.BackColor = Color.FromArgb(64, 64, 64);
-            button17.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button17.ForeColor = Color.White;
-            button17.Location = new Point(204, 579);
-            button17.Name = "button17";
-            button17.Size = new Size(90, 85);
-            button17.TabIndex = 17;
-            button17.Text = "⌫";
-            button17.UseVisualStyleBackColor = false;
+            btnErase.BackColor = Color.FromArgb(64, 64, 64);
+            btnErase.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnErase.ForeColor = Color.White;
+            btnErase.Location = new Point(204, 579);
+            btnErase.Name = "btnErase";
+            btnErase.Size = new Size(90, 85);
+            btnErase.TabIndex = 17;
+            btnErase.Text = "⌫";
+            btnErase.UseVisualStyleBackColor = false;
             // 
-            // button18
+            // btnEquals
             // 
-            button18.BackColor = Color.IndianRed;
-            button18.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button18.ForeColor = Color.White;
-            button18.Location = new Point(300, 488);
-            button18.Name = "button18";
-            button18.Size = new Size(90, 176);
-            button18.TabIndex = 18;
-            button18.Text = "=";
-            button18.UseVisualStyleBackColor = false;
+            btnEquals.BackColor = Color.IndianRed;
+            btnEquals.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEquals.ForeColor = Color.White;
+            btnEquals.Location = new Point(300, 488);
+            btnEquals.Name = "btnEquals";
+            btnEquals.Size = new Size(90, 176);
+            btnEquals.TabIndex = 18;
+            btnEquals.Text = "=";
+            btnEquals.UseVisualStyleBackColor = false;
             // 
             // txtOperador
             // 
@@ -325,26 +325,26 @@
             Controls.Add(txtAccount);
             Controls.Add(txtInScreen);
             Controls.Add(txtOperador);
-            Controls.Add(button18);
-            Controls.Add(button17);
-            Controls.Add(button16);
+            Controls.Add(btnEquals);
+            Controls.Add(btnErase);
+            Controls.Add(btnDot);
             Controls.Add(button15);
-            Controls.Add(button14);
-            Controls.Add(button13);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btn1);
+            Controls.Add(btn2);
+            Controls.Add(btn3);
+            Controls.Add(btn6);
+            Controls.Add(btn5);
+            Controls.Add(btn4);
+            Controls.Add(btn9);
+            Controls.Add(btn8);
+            Controls.Add(btn7);
+            Controls.Add(btnPlus);
+            Controls.Add(btnMinus);
+            Controls.Add(btnMultiply);
+            Controls.Add(btnDivide);
+            Controls.Add(btnPercentage);
             Controls.Add(btnClear);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "calculadora_app";
             Text = "calculadora_app";
             ResumeLayout(false);
@@ -354,24 +354,24 @@
         #endregion
 
         private Button btnClear;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button14;
+        private Button btnPercentage;
+        private Button btnDivide;
+        private Button btnMultiply;
+        private Button btnMinus;
+        private Button btnPlus;
+        private Button btn7;
+        private Button btn8;
+        private Button btn9;
+        private Button btn4;
+        private Button btn5;
+        private Button btn6;
+        private Button btn3;
+        private Button btn2;
+        private Button btn1;
         private Button button15;
-        private Button button16;
-        private Button button17;
-        private Button button18;
+        private Button btnDot;
+        private Button btnErase;
+        private Button btnEquals;
         private Label txtOperador;
         private Label txtInScreen;
         private Label txtAccount;
