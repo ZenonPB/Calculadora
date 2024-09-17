@@ -43,6 +43,11 @@ namespace calculadora
             {
                 pgbLoading.Value = pgbLoading.Maximum;
                 tmrLoading.Stop();
+                tmrTxtLoad.Stop();
+                this.Hide();
+
+                calculadora_app calc = new calculadora_app();
+                calc.Show();
             }
         }
 

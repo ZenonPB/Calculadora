@@ -42,9 +42,10 @@
             // 
             gifLoading.BackColor = Color.Transparent;
             gifLoading.Image = Properties.Resources.gatinho_unscreen;
-            gifLoading.Location = new Point(-159, 224);
+            gifLoading.Location = new Point(-199, 280);
+            gifLoading.Margin = new Padding(4);
             gifLoading.Name = "gifLoading";
-            gifLoading.Size = new Size(497, 225);
+            gifLoading.Size = new Size(621, 281);
             gifLoading.SizeMode = PictureBoxSizeMode.Zoom;
             gifLoading.TabIndex = 0;
             gifLoading.TabStop = false;
@@ -55,9 +56,10 @@
             txtLoading.AutoSize = true;
             txtLoading.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtLoading.ForeColor = Color.White;
-            txtLoading.Location = new Point(127, 145);
+            txtLoading.Location = new Point(159, 181);
+            txtLoading.Margin = new Padding(4, 0, 4, 0);
             txtLoading.Name = "txtLoading";
-            txtLoading.Size = new Size(221, 41);
+            txtLoading.Size = new Size(264, 50);
             txtLoading.TabIndex = 1;
             txtLoading.Text = "Carregando...";
             txtLoading.TextAlign = ContentAlignment.MiddleCenter;
@@ -66,9 +68,10 @@
             // 
             // pgbLoading
             // 
-            pgbLoading.Location = new Point(21, 208);
+            pgbLoading.Location = new Point(26, 260);
+            pgbLoading.Margin = new Padding(4);
             pgbLoading.Name = "pgbLoading";
-            pgbLoading.Size = new Size(753, 45);
+            pgbLoading.Size = new Size(941, 56);
             pgbLoading.TabIndex = 2;
             // 
             // tmrLoading
@@ -83,15 +86,16 @@
             // 
             // frm_calc
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tomato;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
             Controls.Add(pgbLoading);
             Controls.Add(txtLoading);
             Controls.Add(gifLoading);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4);
             MaximizeBox = false;
             Name = "frm_calc";
             StartPosition = FormStartPosition.CenterScreen;
