@@ -30,10 +30,10 @@
         {
             btnClear = new Button();
             button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            btnDivide = new Button();
+            btnMultiply = new Button();
+            btnMinus = new Button();
+            btnPlus = new Button();
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
@@ -47,7 +47,6 @@
             button16 = new Button();
             btnErase = new Button();
             button18 = new Button();
-            txtOperator = new Label();
             txtInScreen = new Label();
             txtAccount = new Label();
             SuspendLayout();
@@ -79,57 +78,61 @@
             button1.Text = "%";
             button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnDivide
             // 
-            button2.BackColor = Color.Gray;
-            button2.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(163, 172);
-            button2.Margin = new Padding(2);
-            button2.Name = "button2";
-            button2.Size = new Size(72, 68);
-            button2.TabIndex = 2;
-            button2.Text = "÷";
-            button2.UseVisualStyleBackColor = false;
+            btnDivide.BackColor = Color.Gray;
+            btnDivide.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDivide.ForeColor = Color.White;
+            btnDivide.Location = new Point(163, 172);
+            btnDivide.Margin = new Padding(2);
+            btnDivide.Name = "btnDivide";
+            btnDivide.Size = new Size(72, 68);
+            btnDivide.TabIndex = 2;
+            btnDivide.Text = "÷";
+            btnDivide.UseVisualStyleBackColor = false;
+            btnDivide.Click += btnDivide_Click;
             // 
-            // button3
+            // btnMultiply
             // 
-            button3.BackColor = Color.Gray;
-            button3.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(240, 172);
-            button3.Margin = new Padding(2);
-            button3.Name = "button3";
-            button3.Size = new Size(72, 68);
-            button3.TabIndex = 3;
-            button3.Text = "X";
-            button3.UseVisualStyleBackColor = false;
+            btnMultiply.BackColor = Color.Gray;
+            btnMultiply.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMultiply.ForeColor = Color.White;
+            btnMultiply.Location = new Point(240, 172);
+            btnMultiply.Margin = new Padding(2);
+            btnMultiply.Name = "btnMultiply";
+            btnMultiply.Size = new Size(72, 68);
+            btnMultiply.TabIndex = 3;
+            btnMultiply.Text = "X";
+            btnMultiply.UseVisualStyleBackColor = false;
+            btnMultiply.Click += btnMultiply_Click;
             // 
-            // button4
+            // btnMinus
             // 
-            button4.BackColor = Color.Gray;
-            button4.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(240, 245);
-            button4.Margin = new Padding(2);
-            button4.Name = "button4";
-            button4.Size = new Size(72, 68);
-            button4.TabIndex = 4;
-            button4.Text = "-";
-            button4.UseVisualStyleBackColor = false;
+            btnMinus.BackColor = Color.Gray;
+            btnMinus.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMinus.ForeColor = Color.White;
+            btnMinus.Location = new Point(240, 245);
+            btnMinus.Margin = new Padding(2);
+            btnMinus.Name = "btnMinus";
+            btnMinus.Size = new Size(72, 68);
+            btnMinus.TabIndex = 4;
+            btnMinus.Text = "-";
+            btnMinus.UseVisualStyleBackColor = false;
+            btnMinus.Click += btnMinus_Click;
             // 
-            // button5
+            // btnPlus
             // 
-            button5.BackColor = Color.Gray;
-            button5.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(240, 318);
-            button5.Margin = new Padding(2);
-            button5.Name = "button5";
-            button5.Size = new Size(72, 68);
-            button5.TabIndex = 5;
-            button5.Text = "+";
-            button5.UseVisualStyleBackColor = false;
+            btnPlus.BackColor = Color.Gray;
+            btnPlus.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPlus.ForeColor = Color.White;
+            btnPlus.Location = new Point(240, 318);
+            btnPlus.Margin = new Padding(2);
+            btnPlus.Name = "btnPlus";
+            btnPlus.Size = new Size(72, 68);
+            btnPlus.TabIndex = 5;
+            btnPlus.Text = "+";
+            btnPlus.UseVisualStyleBackColor = false;
+            btnPlus.Click += btnPlus_Click;
             // 
             // button6
             // 
@@ -312,26 +315,13 @@
             button18.Text = "=";
             button18.UseVisualStyleBackColor = false;
             // 
-            // txtOperator
-            // 
-            txtOperator.AutoSize = true;
-            txtOperator.BackColor = Color.Transparent;
-            txtOperator.Font = new Font("Verdana", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtOperator.ForeColor = Color.White;
-            txtOperator.Location = new Point(10, 123);
-            txtOperator.Margin = new Padding(2, 0, 2, 0);
-            txtOperator.Name = "txtOperator";
-            txtOperator.Size = new Size(47, 41);
-            txtOperator.TabIndex = 19;
-            txtOperator.Text = "+";
-            // 
             // txtInScreen
             // 
             txtInScreen.AutoSize = true;
             txtInScreen.BackColor = Color.Transparent;
             txtInScreen.Font = new Font("Verdana", 64F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtInScreen.ForeColor = Color.White;
-            txtInScreen.Location = new Point(58, 38);
+            txtInScreen.Location = new Point(11, 40);
             txtInScreen.Margin = new Padding(2, 0, 2, 0);
             txtInScreen.Name = "txtInScreen";
             txtInScreen.Size = new Size(0, 130);
@@ -343,7 +333,7 @@
             txtAccount.BackColor = Color.Transparent;
             txtAccount.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtAccount.ForeColor = Color.Silver;
-            txtAccount.Location = new Point(154, 24);
+            txtAccount.Location = new Point(10, 15);
             txtAccount.Margin = new Padding(2, 0, 2, 0);
             txtAccount.Name = "txtAccount";
             txtAccount.Size = new Size(85, 25);
@@ -358,7 +348,6 @@
             ClientSize = new Size(322, 535);
             Controls.Add(txtAccount);
             Controls.Add(txtInScreen);
-            Controls.Add(txtOperator);
             Controls.Add(button18);
             Controls.Add(btnErase);
             Controls.Add(button16);
@@ -372,10 +361,10 @@
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnPlus);
+            Controls.Add(btnMinus);
+            Controls.Add(btnMultiply);
+            Controls.Add(btnDivide);
             Controls.Add(button1);
             Controls.Add(btnClear);
             Name = "calculadora_app";
@@ -388,10 +377,10 @@
 
         private Button btnClear;
         private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button btnDivide;
+        private Button btnMultiply;
+        private Button btnMinus;
+        private Button btnPlus;
         private Button button6;
         private Button button7;
         private Button button8;
@@ -405,7 +394,6 @@
         private Button button16;
         private Button btnErase;
         private Button button18;
-        private Label txtOperator;
         private Label txtInScreen;
         private Label txtAccount;
     }
