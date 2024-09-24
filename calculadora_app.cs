@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace calculadora
@@ -18,73 +12,99 @@ namespace calculadora
             txtAccount.Text = "";
         }
 
-        string btnPressed = "";
-        string equacao = "";
+        // Variáveis para armazenar a entrada atual e a equação
+        private string btnPressed = "";
+        private string equacao = "";
 
-        // Está como button6 porque não consegui renomear, porém é a uniao de todos os botões de algarismos
+        // Adiciona o número pressionado ao display
         private void button6_Click(object sender, EventArgs e)
         {
-
-            Button btn = sender as Button;
-            if (btn != null)
+            if (sender is Button btn)
             {
                 btnPressed += btn.Text;
                 txtInScreen.Text = btnPressed;
             }
         }
 
+        // Atualiza a equação e o display da conta
         private void equacaoUpdate(string txt)
         {
             equacao += txt;
             txtAccount.Text = equacao;
         }
 
+        // Reseta tanto a entrada do clique, quanto o texto que aparece em maior destaque
         private void resetAll()
         {
             btnPressed = "";
             txtInScreen.Text = "";
         }
 
+        // Limpa todos os valores
         private void btnClear_Click(object sender, EventArgs e)
         {
             resetAll();
-            equacaoUpdate("");
+            equacao = "";
+            txtAccount.Text = "";
         }
 
+        // Apaga o último algarismo da digitação
         private void btnErase_Click(object sender, EventArgs e)
         {
-            // fazer o último algarismo ser apagado
-            btnPressed = btnPressed.Substring(0, btnPressed.Length - 1);
-            txtInScreen.Text = btnPressed;
-            equacaoUpdate(txtInScreen.Text);
+            if (btnPressed.Length > 0)
+            {
+                btnPressed = btnPressed.Substring(0, btnPressed.Length - 1);
+                txtInScreen.Text = btnPressed;
+            }
         }
 
-        private void btnPlus_Click(object sender, EventArgs e)
+        // Adiciona operador e atualiza a equação
+        private void AddOperator(string operador)
         {
-            equacaoUpdate(txtInScreen.Text);
-            equacaoUpdate("+");
-            resetAll();
+            if (!string.IsNullOrEmpty(btnPressed) || !string.IsNullOrEmpty(equacao))
+            {
+                equacaoUpdate(btnPressed);
+                equacaoUpdate(operador);
+                resetAll();
+            }
         }
 
-        private void btnMinus_Click(object sender, EventArgs e)
+        private void btnPlus_Click(object sender, EventArgs e) => AddOperator("+");
+        private void btnMinus_Click(object sender, EventArgs e) => AddOperator("-");
+        private void btnMultiply_Click(object sender, EventArgs e) => AddOperator("*");
+        private void btnDivide_Click(object sender, EventArgs e) => AddOperator("/");
+
+        private void btnPercentage_Click(object sender, EventArgs e)
         {
-            equacaoUpdate(txtInScreen.Text);
-            equacaoUpdate("-");
-            resetAll();
+            if (!string.IsNullOrEmpty(btnPressed))
+            {
+                equacaoUpdate(btnPressed);
+                equacaoUpdate("/100");
+                resetAll();
+            }
         }
 
-        private void btnMultiply_Click(object sender, EventArgs e)
+        // Calcula o resultado da equação
+        private void btnEquals_Click(object sender, EventArgs e)
         {
-            equacaoUpdate(txtInScreen.Text);
-            equacaoUpdate("*");
-            resetAll();
-        }
+            if (!string.IsNullOrEmpty(btnPressed))
+            {
+                equacaoUpdate(btnPressed);
+            }
 
-        private void btnDivide_Click(object sender, EventArgs e)
-        {
-            equacaoUpdate(txtInScreen.Text);
-            equacaoUpdate("/");
-            resetAll();
+            try
+            {
+                var result = new DataTable().Compute(equacao, null);
+                txtInScreen.Text = result.ToString();
+                // Atualiza a equação para o resultado
+                equacao = result.ToString();
+                btnPressed = ""; // Limpa a entrada atual
+                txtAccount.Text = equacao; // Mostra a equação completa
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro na conta: " + ex.Message);
+            }
         }
     }
 }

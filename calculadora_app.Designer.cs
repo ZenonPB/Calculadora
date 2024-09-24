@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             btnClear = new Button();
-            button1 = new Button();
+            btnPercentage = new Button();
             btnDivide = new Button();
             btnMultiply = new Button();
             btnMinus = new Button();
@@ -46,7 +46,7 @@
             button15 = new Button();
             button16 = new Button();
             btnErase = new Button();
-            button18 = new Button();
+            btnEquals = new Button();
             txtInScreen = new Label();
             txtAccount = new Label();
             SuspendLayout();
@@ -65,18 +65,19 @@
             btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += btnClear_Click;
             // 
-            // button1
+            // btnPercentage
             // 
-            button1.BackColor = Color.Gray;
-            button1.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(86, 172);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(72, 68);
-            button1.TabIndex = 1;
-            button1.Text = "%";
-            button1.UseVisualStyleBackColor = false;
+            btnPercentage.BackColor = Color.Gray;
+            btnPercentage.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPercentage.ForeColor = Color.White;
+            btnPercentage.Location = new Point(86, 172);
+            btnPercentage.Margin = new Padding(2);
+            btnPercentage.Name = "btnPercentage";
+            btnPercentage.Size = new Size(72, 68);
+            btnPercentage.TabIndex = 1;
+            btnPercentage.Text = "%";
+            btnPercentage.UseVisualStyleBackColor = false;
+            btnPercentage.Click += btnPercentage_Click;
             // 
             // btnDivide
             // 
@@ -302,18 +303,19 @@
             btnErase.UseVisualStyleBackColor = false;
             btnErase.Click += btnErase_Click;
             // 
-            // button18
+            // btnEquals
             // 
-            button18.BackColor = Color.IndianRed;
-            button18.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button18.ForeColor = Color.White;
-            button18.Location = new Point(240, 390);
-            button18.Margin = new Padding(2);
-            button18.Name = "button18";
-            button18.Size = new Size(72, 141);
-            button18.TabIndex = 18;
-            button18.Text = "=";
-            button18.UseVisualStyleBackColor = false;
+            btnEquals.BackColor = Color.IndianRed;
+            btnEquals.Font = new Font("Verdana", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEquals.ForeColor = Color.White;
+            btnEquals.Location = new Point(240, 390);
+            btnEquals.Margin = new Padding(2);
+            btnEquals.Name = "btnEquals";
+            btnEquals.Size = new Size(72, 141);
+            btnEquals.TabIndex = 18;
+            btnEquals.Text = "=";
+            btnEquals.UseVisualStyleBackColor = false;
+            btnEquals.Click += btnEquals_Click;
             // 
             // txtInScreen
             // 
@@ -348,7 +350,7 @@
             ClientSize = new Size(322, 535);
             Controls.Add(txtAccount);
             Controls.Add(txtInScreen);
-            Controls.Add(button18);
+            Controls.Add(btnEquals);
             Controls.Add(btnErase);
             Controls.Add(button16);
             Controls.Add(button15);
@@ -365,7 +367,7 @@
             Controls.Add(btnMinus);
             Controls.Add(btnMultiply);
             Controls.Add(btnDivide);
-            Controls.Add(button1);
+            Controls.Add(btnPercentage);
             Controls.Add(btnClear);
             Name = "calculadora_app";
             Text = "calculadora_app";
@@ -376,7 +378,7 @@
         #endregion
 
         private Button btnClear;
-        private Button button1;
+        private Button btnPercentage;
         private Button btnDivide;
         private Button btnMultiply;
         private Button btnMinus;
@@ -393,7 +395,7 @@
         private Button button15;
         private Button button16;
         private Button btnErase;
-        private Button button18;
+        private Button btnEquals;
         private Label txtInScreen;
         private Label txtAccount;
     }
