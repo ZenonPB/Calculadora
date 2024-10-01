@@ -119,7 +119,8 @@ namespace calculadora
 
         private void celsiusParaFahrenheintToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            convert_temp convert_Temp = new convert_temp();
+            convert_Temp.Show();
         }
     }
 }

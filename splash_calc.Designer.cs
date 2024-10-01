@@ -42,10 +42,10 @@
             // 
             gifLoading.BackColor = Color.Transparent;
             gifLoading.Image = Properties.Resources.gatinho_unscreen;
-            gifLoading.Location = new Point(-199, 280);
-            gifLoading.Margin = new Padding(4);
+            gifLoading.Location = new Point(-139, 168);
+            gifLoading.Margin = new Padding(3, 2, 3, 2);
             gifLoading.Name = "gifLoading";
-            gifLoading.Size = new Size(621, 281);
+            gifLoading.Size = new Size(435, 169);
             gifLoading.SizeMode = PictureBoxSizeMode.Zoom;
             gifLoading.TabIndex = 0;
             gifLoading.TabStop = false;
@@ -56,10 +56,9 @@
             txtLoading.AutoSize = true;
             txtLoading.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtLoading.ForeColor = Color.White;
-            txtLoading.Location = new Point(159, 181);
-            txtLoading.Margin = new Padding(4, 0, 4, 0);
+            txtLoading.Location = new Point(111, 109);
             txtLoading.Name = "txtLoading";
-            txtLoading.Size = new Size(264, 50);
+            txtLoading.Size = new Size(176, 35);
             txtLoading.TabIndex = 1;
             txtLoading.Text = "Carregando...";
             txtLoading.TextAlign = ContentAlignment.MiddleCenter;
@@ -68,11 +67,12 @@
             // 
             // pgbLoading
             // 
-            pgbLoading.Location = new Point(26, 260);
-            pgbLoading.Margin = new Padding(4);
+            pgbLoading.Location = new Point(18, 156);
+            pgbLoading.Margin = new Padding(3, 2, 3, 2);
             pgbLoading.Name = "pgbLoading";
-            pgbLoading.Size = new Size(941, 56);
+            pgbLoading.Size = new Size(659, 34);
             pgbLoading.TabIndex = 2;
+            pgbLoading.Click += pgbLoading_Click;
             // 
             // tmrLoading
             // 
@@ -86,16 +86,16 @@
             // 
             // frm_calc
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tomato;
-            ClientSize = new Size(1000, 562);
+            ClientSize = new Size(700, 337);
             Controls.Add(pgbLoading);
             Controls.Add(txtLoading);
             Controls.Add(gifLoading);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(4);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "frm_calc";
             StartPosition = FormStartPosition.CenterScreen;
