@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace calculadora
 {
-    public partial class ConversorTempcs : Form
+    public partial class convert_temp : Form
     {
         private float fahrenheit;
         private double kelvin;
 
-        public ConversorTempcs()
+        public convert_temp()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace calculadora
         {
 
         }
-    
+
         public void temperatura()
         {
             int temperature = Convert.ToInt32(boxUserInput.Text);
@@ -34,6 +34,12 @@ namespace calculadora
         private void btnConvert_Click(object sender, EventArgs e)
         {
             txtResult.Text = $"{fahrenheit}°F ou {kelvin}°K";
+            txtResult.Visible = true;
+        }
+
+        private void ConversorTempcs_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

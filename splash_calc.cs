@@ -73,5 +73,10 @@ namespace calculadora
             txtLoading.Text = loadingTexts[indexLoading];
 
         }
+
+        private void pgbLoading_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

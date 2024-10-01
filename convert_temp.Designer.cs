@@ -1,6 +1,6 @@
 ﻿namespace calculadora
 {
-    partial class ConversorTempcs
+    partial class convert_temp
     {
         /// <summary>
         /// Required designer variable.
@@ -103,6 +103,7 @@
             Controls.Add(txtHeader);
             Name = "ConversorTempcs";
             Text = "ConversorTempcs";
+            FormClosed += ConversorTempcs_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }
