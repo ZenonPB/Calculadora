@@ -106,5 +106,20 @@ namespace calculadora
                 MessageBox.Show("Erro na conta: " + ex.Message);
             }
         }
+
+        private void calculadora_app_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calculadora_app_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void celsiusParaFahrenheintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
